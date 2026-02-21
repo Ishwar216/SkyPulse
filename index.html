@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Ultimate Weather App</title>
+    <title>SkyCast - Ultimate Weather</title>
     <link rel="stylesheet" href="style.css">
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
@@ -10,7 +10,9 @@
 <div id="background"></div>
 
 <div class="container">
-    <h1>🌤 Ultimate Weather</h1>
+
+    <h1 class="logo">☁ SkyCast</h1>
+    <p class="tagline">Live Weather • Forecast • Real-Time Updates</p>
 
     <div class="search-box">
         <input type="text" id="cityInput" placeholder="Enter city name">
@@ -18,16 +20,17 @@
         <button onclick="getLocationWeather()">📍</button>
     </div>
 
-    <button onclick="toggleDarkMode()">🌙 Dark Mode</button>
-    <button onclick="saveCity()">⭐ Save City</button>
+    <div class="btn-group">
+        <button onclick="toggleDarkMode()">🌙 Dark Mode</button>
+        <button onclick="saveCity()">⭐ Save</button>
+    </div>
 
     <div id="weatherResult"></div>
     <div id="forecast"></div>
 
     <canvas id="tempChart"></canvas>
-</div>
 
-<audio id="rainSound" src="https://www.soundjay.com/nature/rain-01.mp3"></audio>
+</div>
 
 <script src="script.js"></script>
 </body>
